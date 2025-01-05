@@ -1,42 +1,10 @@
 $primary-color: #000000;
 $secondary-color: #E87A14;
-$terciary-color: #FFFF;
+$tertiary-color: #FFFFFF;
 $fourth-color: #44C3EB;
-$primary-font: poppins;
+$primary-font: 'Poppins', sans-serif;
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  font-size: 15px;
-}
-
-.header__nav {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.nav__group {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-.nav__element {
-  margin-right: 20px;
-}
-
-.nav__last {
-  margin-left: auto;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: inherit;
-}
-
+// General Reset
 ul {
   list-style: none;
   padding: 0;
@@ -45,4 +13,133 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+// Header Container
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 70px;
+  font-family: $primary-font;
+  position: relative;
+}
+
+// Logo
+.header__logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: $primary-color;
+}
+
+// Navigation
+.header__nav {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav__group {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__element {
+  font-size: 15px;
+  font-weight: 500;
+  color: $primary-color;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+// Kontakt Button
+.nav__last {
+  margin-left: auto;
+}
+
+.btn {
+  background-color: $secondary-color;
+  color: $tertiary-color;
+  border: none;
+  border-radius: 12px;
+  padding: 11px 35px;
+  font-size: 14px;
+  font-family: $primary-font;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+
+  .dot {
+    color: $fourth-color;
+  }
+}
+.body-image {
+  width: 70%;  // Adjust width
+  max-width: 500px;  // Prevent it from becoming too large
+  height: auto;  // Maintain aspect ratio
+  display: block;  // Make it a block element
+  margin: 95px 200px 95px auto;  // Add margin on the right side to align to the right
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: flex; // Flex container to position text and image
+  justify-content: space-between; // Space between text and image
+  align-items: center; // Align items vertically in the center
+  padding: 0 10%; // Add padding on the left and right for spacing
+  height: 100vh; // Full viewport height
+  font-family: $primary-font;
+}
+
+.text-section {
+  max-width: 40%; // Restrict text width
+}
+
+p {
+  font-size: 30px;
+  line-height: 1.6;
+  color: $primary-color;
+  margin-bottom: 20px;
+  font-family: $primary-font;
+  letter-spacing: 4px;
+}
+
+
+.start {
+  font-size: 24px;
+}
+.hej-container {
+  margin-bottom: 5px;
+}
+
+.hej {
+  color: $fourth-color;
+  font-weight: bold;
+  font-size: 24px;
+  display: block;
+  text-decoration: none;
+}
+.btn--secondary {
+  margin-top: 10px;
 }

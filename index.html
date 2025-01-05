@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout</title>
     <link rel="stylesheet" href="scss/main.scss">
-    <title>Janez Novak</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,16 +12,36 @@
 <body>
 <header class="header">
     <div class="header__container container">
-        <h1>J.ANEZ NOVAK</h1>
-        <nav>
-            <ul class="header__nav">
-                <div class="nav__group">
-                    <li class="nav__element"><a href="#O-meni" class="nav__link">O meni</a></li>
-                    <li class="nav__element"><a href="#Storitve" class="nav__link">Storitve</a></li>
-                    <li class="nav__element"><a href="#Znanja" class="nav__link">Znanja</a></li>
-                </div>
-                <li class="nav__element nav__last"><a href="#Kontakt" class="nav__link">Kontakt</a></li>
+        <!-- Logo -->
+        <h1>J<span class="dot">.</span>anez Novak</h1>
+
+        <!-- Navigation -->
+        <nav class="header__nav">
+            <ul class="nav__group">
+                <li class="nav__element"><a href="#O-meni" class="nav__link">O meni</a></li>
+                <li class="nav__element"><a href="#Storitve" class="nav__link">Storitve</a></li>
+                <li class="nav__element"><a href="#Znanja" class="nav__link">Znanja</a></li>
             </ul>
         </nav>
+
+        <!-- Button moved outside nav -->
+        <div class="nav__last">
+            <a href="#" class="btn btn--primary">Kontakt</a>
+        </div>
     </div>
 </header>
+<main class="content">
+    <!-- Left side: Text -->
+    <div class="text-section">
+        <span class="hej">HEJ</span>
+        <p>
+            Potrebujete novo spletno stran? Kontaktirajte me in z veseljem vam bom pomagal.
+        </p>
+        <a href="#" class="btn btn--secondary">Kontakt</a>
+    </div>
+
+    <!-- Right side: Image -->
+    <img src="assets/Janez-novak.png" alt="Janez Novak pic" class="body-image">
+</main>
+</body>
+</html>
