@@ -95,20 +95,20 @@ h1 {
   }
 }
 .body-image {
-  width: 70%;  // Adjust width
-  max-width: 500px;  // Prevent it from becoming too large
-  height: auto;  // Maintain aspect ratio
-  display: block;  // Make it a block element
-  margin: 95px 200px 95px auto;  // Add margin on the right side to align to the right
+  width: 70%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 95px 200px 95px auto; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .content {
-  display: flex; // Flex container to position text and image
-  justify-content: space-between; // Space between text and image
-  align-items: center; // Align items vertically in the center
-  padding: 0 10%; // Add padding on the left and right for spacing
-  height: 100vh; // Full viewport height
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  height: 100vh;
   font-family: $primary-font;
 }
 
